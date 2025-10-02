@@ -1,8 +1,13 @@
 ---
 - project:
+    vars:
+      registry: quay.io
+      repository: quay.io/guillaume20100/dci-test
     check-github.com:
-        jobs:
-            - noop
+      jobs:
+        - dci-build-container-image-job
+        - dci-upload-expiring-container-image-job:
+            dependencies: dci-build-container-image-job
     gate-github.com:
-        jobs:
-            - noop
+      jobs:
+        - dci-upload-container-image-job
