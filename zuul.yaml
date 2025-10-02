@@ -1,0 +1,8 @@
+---
+- project:
+    check-github.com:
+        jobs:
+            - noop
+    gate-github.com:
+        jobs:
+            - noop
