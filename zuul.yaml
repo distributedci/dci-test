@@ -2,7 +2,7 @@
 - project:
     check-github.com:
       jobs:
-        - dci-ui-test
+        - dci-ui-test-job
     gate-github.com:
       jobs:
         - noop
