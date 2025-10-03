@@ -1,8 +1,8 @@
 ---
 - project:
     check-github.com:
-        jobs:
-            - noop
+      jobs:
+        - dci-ui-test-job
     gate-github.com:
-        jobs:
-            - noop
+      jobs:
+        - noop
