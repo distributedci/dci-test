@@ -1,11 +1,8 @@
 ---
 - project:
-    vars:
-      registry: quay.io
-      repository: quay.io/guillaume20100/dci-test
     check-github.com:
       jobs:
-        - test-secret
+        - dci-ui-test
     gate-github.com:
       jobs:
         - noop
